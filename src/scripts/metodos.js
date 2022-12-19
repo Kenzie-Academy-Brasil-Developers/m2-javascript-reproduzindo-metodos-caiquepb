@@ -131,14 +131,14 @@ const arrayIncludes = [0,1,2,3,4,5,6,7,8,9]
 
 function meuMetodoIncludes(array) {
 
-    const includesResult = []
+    let includesResult = false
 
     for(let index = 0; index < array.length; index++){
 
         if(array[index] === 2){
         
-        const element = array[index]
-        includesResult.push(element)
+        includesResult = true
+        return includesResult
 
         }
     
